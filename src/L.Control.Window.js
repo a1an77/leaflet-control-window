@@ -79,7 +79,7 @@ L.Control.Window = L.Control.extend({
         this._btnOK.disabled=true;
     }
     setunButton: function(){
-        this._btnOK.disabled=true;
+        this._btnOK.disabled=false;
     }
     title: function(titleContent){
         if (titleContent==undefined){
