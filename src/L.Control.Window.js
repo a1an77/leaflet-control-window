@@ -75,10 +75,10 @@ L.Control.Window = L.Control.extend({
 
         //map.on('resize',function(){self.mapResized()});
     },
-    setButton: function(){
+    diableBtn: function(){
         this._btnOK.disabled=true;
     }
-    setunButton: function(){
+    enableBtn: function(){
         this._btnOK.disabled=false;
     }
     title: function(titleContent){
