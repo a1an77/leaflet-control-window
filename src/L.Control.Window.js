@@ -72,7 +72,10 @@ L.Control.Window = L.Control.extend({
         if (this.options.visible){
             this.show();
         }
-
+        //Assign a new className if container is empty
+        if (this._containerPromptButtons.innerHTML === "") {
+            this._containerPromptButtons.className='empty-prompt-buttons';
+        }
         //map.on('resize',function(){self.mapResized()});
     },
     disableBtn: function(){
